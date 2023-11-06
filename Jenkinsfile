@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'docker_agent'
+        label 'docker_agent_template'
       }
     triggers {
         pollSCM 'H/2 * * * *'
