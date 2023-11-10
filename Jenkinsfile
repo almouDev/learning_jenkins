@@ -3,7 +3,6 @@ pipeline {
         node {
             label 'docker-agent-template'
             }
-      }
     triggers {
         pollSCM 'H/2 * * * *'
     }
