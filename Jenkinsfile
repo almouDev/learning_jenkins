@@ -11,6 +11,9 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Testing.."
+                sh '''
+                python3 main.py
+                '''
             }
         }
         stage('Deliver') {
